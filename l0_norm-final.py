@@ -109,5 +109,5 @@ for epoch in range(100):
     total_loss.backward()
     optimizer.step()
     
-    print(f'Epoch [{epoch+1}/100], Loss: {loss.item()}')
+    print(f'Epoch [{epoch+1}/100], Loss: {total_loss.item()}')
      
