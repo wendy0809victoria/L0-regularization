@@ -104,7 +104,7 @@ for epoch in range(100):
     optimizer.zero_grad()
     outputs = model(inputs)
     loss = criterion(outputs, labels)
-    l1_loss = model.regularization()
+    l0_loss = model.regularization()
     total_loss = loss + l1_loss
     total_loss.backward()
     optimizer.step()
